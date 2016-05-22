@@ -3,10 +3,26 @@
 class DB
 {
     protected $connection;
+    private static $instance;
+    protected $host;
+    protected $user;
+    protected $password;
+    protected $db_name;
 
-    public function __construct($host, $user, $password, $db_name)
+    public static function getInstance()
     {
-        $this->connection = new mysqli($host, $user, $password, $db_name);
+        if(self::$instance===null){
+            self::$instance=new self;
+        }
+        return self::$instance;
+    }
+    private function __construct()
+    {
+        $this->host=Config::get('db.host');
+        $this->user=Config::get('db.user');
+        $this->password=Config::get('db.password');
+        $this->db_name=Config::get('db.db_name');
+        $this->connection = new mysqli($this->host,  $this->user, $this->password, $this->db_name);
         $this->query('SET NAMES UTF8');
 
         if (mysqli_connect_error()) {
@@ -14,6 +30,11 @@ class DB
 
         }
     }
+
+    private function __clone(){}
+    private function __sleep(){}
+
+    private function __wakeup(){}
 
     public function query($sql)
     {

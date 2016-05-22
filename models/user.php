@@ -53,6 +53,7 @@ class User extends Model
         $mail->setFromName("Администратор сайта"); // Устанавливаем имя в обратном адресе
         if ($mail->send("$email", "Регистрация на MyBarter.UA", "На ваши почтовый ящик была проведена регистрация на MyBarter.UA . <br />Чтобы завершить регистрацию, пройдите по ссылке: http://{$_SERVER['SERVER_NAME']}".PRELINK."users/confirm?confirm_key={$sess}<br /><b>Если это были не Вы, просто проигнорируйте это письмо. Приятных Вам приобретений!<b>")) echo "Письмо отправлено";
         else echo "Письмо не отправлено";
+
     }
 
     public function confirm()

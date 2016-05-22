@@ -75,7 +75,6 @@ class Router
         $routes = Config::get('routes');
         $this->route = Config::get('default_route');
         $this->method_prefix = isset($routes[$this->route]) ? $routes[$this->route] : '';
-//        $this->language = Config::get('default_language');
         $this->controller = Config::get('default_controller');
         $this->action = Config::get('default_action');
 
@@ -103,10 +102,7 @@ class Router
                 $this->route = strtolower(current($path_parts));
                 $this->method_prefix = isset($routes[$this->route]) ? $routes[$this->route] : '';
                 array_shift($path_parts);
-            } /*elseif (in_array(strtolower(current($path_parts)), Config::get('languages'))) {
-//                $this->language = strtolower(current($path_parts));
-                array_shift($path_parts);
-            }*/
+            } 
             //Get controller - next element of array
             if (current($path_parts)) {
                 $this->controller = strtolower(current($path_parts));
