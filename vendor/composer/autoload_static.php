@@ -7,46 +7,46 @@ namespace Composer\Autoload;
 class ComposerStaticInit7432d96a1c5b7e1ed05b47450187f0bd
 {
     public static $prefixLengthsPsr4 = array (
-        'A' => 
+        'M' => 
         array (
-            'App\\' => 4,
+            'MyBarter\\' => 9,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'App\\' => 
+        'MyBarter\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/app',
+            0 => __DIR__ . '/../..' . '/app/MyBarter',
         ),
     );
 
     public static $classMap = array (
-        'App\\controllers\\AboutController' => __DIR__ . '/../..' . '/app/controllers/AboutController.php',
-        'App\\controllers\\CategoriesController' => __DIR__ . '/../..' . '/app/controllers/CategoriesController.php',
-        'App\\controllers\\ContactsController' => __DIR__ . '/../..' . '/app/controllers/ContactsController.php',
-        'App\\controllers\\MessagesController' => __DIR__ . '/../..' . '/app/controllers/MessagesController.php',
-        'App\\controllers\\UsersController' => __DIR__ . '/../..' . '/app/controllers/UsersController.php',
-        'App\\lib\\AdForm' => __DIR__ . '/../..' . '/app/lib/AdForm.php',
-        'App\\lib\\App' => __DIR__ . '/../..' . '/app/lib/App.php',
-        'App\\lib\\Button' => __DIR__ . '/../..' . '/app/lib/Button.php',
-        'App\\lib\\Config' => __DIR__ . '/../..' . '/app/lib/Config.php',
-        'App\\lib\\ContactForm' => __DIR__ . '/../..' . '/app/lib/ContactForm.php',
-        'App\\lib\\Controller' => __DIR__ . '/../..' . '/app/lib/Controller.php',
-        'App\\lib\\DB' => __DIR__ . '/../..' . '/app/lib/DB.php',
-        'App\\lib\\Form' => __DIR__ . '/../..' . '/app/lib/Form.php',
-        'App\\lib\\LoginForm' => __DIR__ . '/../..' . '/app/lib/LoginForm.php',
-        'App\\lib\\Mail' => __DIR__ . '/../..' . '/app/lib/Mail.php',
-        'App\\lib\\Model' => __DIR__ . '/../..' . '/app/lib/Model.php',
-        'App\\lib\\Pagination' => __DIR__ . '/../..' . '/app/lib/Pagination.php',
-        'App\\lib\\Password' => __DIR__ . '/../..' . '/app/lib/Password.php',
-        'App\\lib\\RegistrationForm' => __DIR__ . '/../..' . '/app/lib/RegistrationForm.php',
-        'App\\lib\\Router' => __DIR__ . '/../..' . '/app/lib/Router.php',
-        'App\\lib\\Session' => __DIR__ . '/../..' . '/app/lib/Session.php',
-        'App\\lib\\View' => __DIR__ . '/../..' . '/app/lib/View.php',
-        'App\\models\\Category' => __DIR__ . '/../..' . '/app/models/Category.php',
-        'App\\models\\Contact' => __DIR__ . '/../..' . '/app/models/Contact.php',
-        'App\\models\\Message' => __DIR__ . '/../..' . '/app/models/Message.php',
-        'App\\models\\User' => __DIR__ . '/../..' . '/app/models/User.php',
+        'MyBarter\\controllers\\AboutController' => __DIR__ . '/../..' . '/app/MyBarter/controllers/AboutController.php',
+        'MyBarter\\controllers\\CategoriesController' => __DIR__ . '/../..' . '/app/MyBarter/controllers/CategoriesController.php',
+        'MyBarter\\controllers\\ContactsController' => __DIR__ . '/../..' . '/app/MyBarter/controllers/ContactsController.php',
+        'MyBarter\\controllers\\MessagesController' => __DIR__ . '/../..' . '/app/MyBarter/controllers/MessagesController.php',
+        'MyBarter\\controllers\\UsersController' => __DIR__ . '/../..' . '/app/MyBarter/controllers/UsersController.php',
+        'MyBarter\\lib\\AdForm' => __DIR__ . '/../..' . '/app/MyBarter/lib/AdForm.php',
+        'MyBarter\\lib\\App' => __DIR__ . '/../..' . '/app/MyBarter/lib/App.php',
+        'MyBarter\\lib\\Button' => __DIR__ . '/../..' . '/app/MyBarter/lib/Button.php',
+        'MyBarter\\lib\\Config' => __DIR__ . '/../..' . '/app/MyBarter/lib/Config.php',
+        'MyBarter\\lib\\ContactForm' => __DIR__ . '/../..' . '/app/MyBarter/lib/ContactForm.php',
+        'MyBarter\\lib\\Controller' => __DIR__ . '/../..' . '/app/MyBarter/lib/Controller.php',
+        'MyBarter\\lib\\DB' => __DIR__ . '/../..' . '/app/MyBarter/lib/DB.php',
+        'MyBarter\\lib\\Form' => __DIR__ . '/../..' . '/app/MyBarter/lib/Form.php',
+        'MyBarter\\lib\\LoginForm' => __DIR__ . '/../..' . '/app/MyBarter/lib/LoginForm.php',
+        'MyBarter\\lib\\Mail' => __DIR__ . '/../..' . '/app/MyBarter/lib/Mail.php',
+        'MyBarter\\lib\\Model' => __DIR__ . '/../..' . '/app/MyBarter/lib/Model.php',
+        'MyBarter\\lib\\Pagination' => __DIR__ . '/../..' . '/app/MyBarter/lib/Pagination.php',
+        'MyBarter\\lib\\Password' => __DIR__ . '/../..' . '/app/MyBarter/lib/Password.php',
+        'MyBarter\\lib\\RegistrationForm' => __DIR__ . '/../..' . '/app/MyBarter/lib/RegistrationForm.php',
+        'MyBarter\\lib\\Router' => __DIR__ . '/../..' . '/app/MyBarter/lib/Router.php',
+        'MyBarter\\lib\\Session' => __DIR__ . '/../..' . '/app/MyBarter/lib/Session.php',
+        'MyBarter\\lib\\View' => __DIR__ . '/../..' . '/app/MyBarter/lib/View.php',
+        'MyBarter\\models\\Category' => __DIR__ . '/../..' . '/app/MyBarter/models/Category.php',
+        'MyBarter\\models\\Contact' => __DIR__ . '/../..' . '/app/MyBarter/models/Contact.php',
+        'MyBarter\\models\\Message' => __DIR__ . '/../..' . '/app/MyBarter/models/Message.php',
+        'MyBarter\\models\\User' => __DIR__ . '/../..' . '/app/MyBarter/models/User.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

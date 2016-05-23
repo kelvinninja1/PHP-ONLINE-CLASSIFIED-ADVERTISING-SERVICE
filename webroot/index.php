@@ -1,11 +1,11 @@
 <?php
 
-use App\lib\App;
+use MyBarter\lib\App;
 
 
 define('DS', DIRECTORY_SEPARATOR);
 define('ROOT', dirname(dirname(__FILE__)));
-define('VIEWS_PATH', ROOT . DS . 'app'.DS.'views');
+define('VIEWS_PATH', ROOT . DS . 'app'.DS.'MyBarter'.DS.'views');
 
 define('PRELINK',substr($_SERVER['PHP_SELF'], strpos($_SERVER['PHP_SELF'], "/project"), strpos($_SERVER['PHP_SELF'], "webroot/index.php")-strpos($_SERVER['PHP_SELF'], "/project")));//префикс для внутренних ссылок, чтобы не зависеть от расположения каталога сайта относительно базового каталога
 //echo PRELINK."-".$_SERVER['PHP_SELF']."--".strpos($_SERVER['PHP_SELF'], "webroot/index.php");die;
